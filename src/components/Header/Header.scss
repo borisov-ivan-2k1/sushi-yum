@@ -1,0 +1,21 @@
+.header {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 0;
+  &-menu {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    & > a {
+      text-decoration: none;
+      color: #000;
+      padding: 3px;
+      font-size: 18px;
+    }
+    &-active {
+      border-bottom: 1px solid #FF9455;;
+    }
+  }
+}
