@@ -1,0 +1,35 @@
+.main {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    &-offer {
+      h1 {
+        font-size: 45px;
+        font-weight: 500;
+        margin-top: 93px;
+      }
+      a {
+        margin-top: 45px;
+      }
+
+      &-items {
+        display: flex;
+        margin-top: 60px;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          margin-right: 45px;
+
+          & > img {
+            width: fit-content;
+          }
+        }
+      }
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
