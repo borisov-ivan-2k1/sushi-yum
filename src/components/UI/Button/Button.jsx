@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Button.scss'
 
-export const Button = ({type, onClick, children, to}) => {
+export const Button = ({type = 'button', onClick = () => {}, children, to = ''}) => {
 
   return (
     <>

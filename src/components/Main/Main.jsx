@@ -1,12 +1,18 @@
 import React from 'react'
 import './Main.scss'
 import { Button } from '../UI/Button/Button'
+
 import mainHeader from './mainHeader.png'
 import fish from '../../assets/img/fish.png'
 import pizza from '../../assets/img/pizza.png'
 import sale from '../../assets/img/sale.png'
 
-export const Main = ({}) => {
+import { connect } from 'react-redux'
+import { mapStateToProps } from './Main.index'
+
+import { ProductItem } from '../ProductItem/ProductItem'
+
+const MainPresenter = ({products}) => {
 
   return (
     <div className='main'>
@@ -39,7 +45,16 @@ export const Main = ({}) => {
         </div>
       </div>
 
+      {Object.keys(products).map(productId => (
+        <ProductItem key={products[productId].id} data={products[productId]}/>
+      ))}
 
+      
     </div>
   )
 }
+
+export const Main = connect(
+  mapStateToProps,
+  undefined
+)(MainPresenter)
