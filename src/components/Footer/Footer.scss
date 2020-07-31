@@ -1,0 +1,27 @@
+.footer {
+  height: 260px;
+  background: rgba(229, 229, 229, 0.5);
+  padding: 0 222px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      margin-left: 68px;
+      a {
+        color: #000;
+        text-decoration: none;  
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &-right {
+    width: 50%;
+  }
+}
