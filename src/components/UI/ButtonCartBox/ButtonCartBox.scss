@@ -1,0 +1,26 @@
+.buttonCartBox {
+  display: flex;
+  border: 1px solid #FF0000;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  &-minus, &-plus {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #FF0000;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  &-value {
+    font-size: 25px;
+    margin: 0 32px;
+  }
+}

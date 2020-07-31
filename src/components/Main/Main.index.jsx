@@ -2,6 +2,6 @@
 
 export const mapStateToProps = (state) => {
   return {
-    products: state.products.prodctsItems
+    products: state.products.productsItems
   }
 }

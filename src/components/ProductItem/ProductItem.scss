@@ -5,6 +5,13 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &-optionImage {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
 
   &-image {
     height: 300px;
@@ -23,6 +30,9 @@
 
   &-buy {
     margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     span {
       font-size: 30px;
     }

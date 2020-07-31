@@ -1,5 +1,5 @@
 export const PRODUCTS = [
-  {id: '0', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 0, type: 'roll', option: 'standart',},
+  {id: '0', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 2, type: 'roll', option: 'new',},
   {id: '1', title: 'Запечёная калифорния', description: 'рис, нори, огурцы свежие, краб снежный, икра "масаго", соус "хот"', oldPrice: 199, price: 149, image: 'https://static.pizzasushiwok.ru/images/menu_new/825-300.jpg', count: 0, type: 'roll', option: 'sale', },
   {id: '2', title: 'Филадельфия ролл с угрём', description: 'рис, нори, сыр сливочный, угорь копченый, соус "унаги", кунжут', oldPrice: 399, price: 199, image: 'https://static.pizzasushiwok.ru/images/menu_new/720-300.jpg', count: 0, type: 'roll', option: 'superSale', },
 ]
