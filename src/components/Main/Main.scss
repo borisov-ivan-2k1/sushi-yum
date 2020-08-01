@@ -35,5 +35,40 @@
       display: flex;
       flex-direction: column;
     }
+
+    &-bg {
+      min-height: 550px;
+    }
+  }
+  
+
+  &-body {
+    margin-top: 48px; 
+    &-newProducts, &-saleProducts, &-superSaleProducts {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 70px;
+      &-title {
+        position: absolute;
+        top: -20px;
+        background: #fff;
+        left: 0;
+        right: 0;
+        width: fit-content;
+        margin: auto;
+        font-size: 30px;
+      }
+
+      & > .productItem {
+        margin-top: 27px;
+      }
+    }
+
+    &-line {
+      border-bottom: 1px solid #FF9455;;
+      width: 100%;
+    }
   }
 }

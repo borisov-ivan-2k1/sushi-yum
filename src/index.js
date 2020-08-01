@@ -7,6 +7,7 @@ import { store } from './redux/configureStore'
 
 import { Router, BrowserRouter } from "react-router-dom"
 import {createBrowserHistory} from 'history'
+// import "typeface-roboto";
 
 const history = createBrowserHistory()
 
