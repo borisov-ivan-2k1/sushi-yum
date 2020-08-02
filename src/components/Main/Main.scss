@@ -106,8 +106,16 @@
         display: none;
       }
     }
+  }
+}
 
-    
+@media (max-width: 1100px) {
+  .main {
+    div &-body {
+      &-newProducts, &-saleProducts, &-superSaleProducts {
+        justify-content: space-around;
+      }
+    }
   }
 }
 

@@ -6,6 +6,7 @@ import './App.scss'
 
 import { Main } from './components/Main/Main'
 import { Menu } from './components/Menu/Menu'
+import { Cart } from './components/Cart/Cart'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/' component={Main}/>
           <Route exact path='/menu' component={Menu}/>
           <Route exact path='/delivery' render={() => <h1>Delivery</h1>}/>
+          <Route exacr path='/cart' component={Cart}/>
         </div>
       </Switch>
     </div>
