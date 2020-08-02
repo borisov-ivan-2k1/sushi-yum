@@ -11,9 +11,11 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route exact path='/' component={Main}/>
-        <Route exact path='/menu' render={() => <h1>Menu</h1>}/>
-        <Route exact path='/delivery' render={() => <h1>Delivery</h1>}/>
+        <div className='App-content'>
+          <Route exact path='/' component={Main}/>
+          <Route exact path='/menu' render={() => <h1>Menu</h1>}/>
+          <Route exact path='/delivery' render={() => <h1>Delivery</h1>}/>
+        </div>
       </Switch>
     </div>
     <Footer />

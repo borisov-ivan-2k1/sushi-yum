@@ -1,14 +1,24 @@
+@import '../../global.scss';
+
 .header {
-  height: 160px;
+  height: $headerHeight;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 23px 0;
+  padding-right: 23px;
   width: 100%;
+  position: fixed;
+  max-width: calc(1200px - 12px - 12px);
+  margin: 0 auto;
+  background-color: #fff;
+  top: 0;
+  z-index: 10;
   &-menu {
     width: 260px;
     display: flex;
     justify-content: space-between;
+    margin: 0 12px;
     & > a {
       text-decoration: none;
       color: #000;
@@ -35,6 +45,23 @@
       justify-content: center;
       border-radius: 50px;
       font-size: 14px;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .header {
+    height: $headerHeightMobile;
+    padding: 0 12px;
+    padding-right: 24px;
+    &-logo {
+      width: 80px;
+      height: 80px;
+    }
+    &-menu {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

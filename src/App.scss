@@ -1,3 +1,5 @@
+@import './global.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,21 @@
 }
 
 .App {
-  margin: 0 300px;
+  padding: 12px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
+  &-content {
+    margin-top: $headerHeight;
+  }
 }
+
+@media (max-width: 500px) {
+  .App {
+    &-content {
+      margin-top: $headerHeightMobile;
+    }
+  }
+}
+

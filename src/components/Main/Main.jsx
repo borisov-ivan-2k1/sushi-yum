@@ -13,7 +13,6 @@ import { mapStateToProps } from './Main.index'
 import { ProductItem } from '../ProductItem/ProductItem'
 
 const MainPresenter = ({
-  products,
   productsItems,
   newProductsIds,
   saleProductsIds,
@@ -25,7 +24,7 @@ const MainPresenter = ({
 
       <div className='main-header'>
         <div className='main-header-offer'>
-          <h1>Доставим суши и пиццу <br /> в течении получаса</h1>
+          <h1>Доставим суши и пиццу в течении получаса</h1>
           <Button type='navlink' to='/menu'>Перейти в меню</Button>
           <div className='main-header-offer-items'>
 

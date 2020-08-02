@@ -6,8 +6,9 @@ import { ButtonCartBox } from '../UI/ButtonCartBox/ButtonCartBox'
 import {mapStateToProps, mapDispatchToProps} from './ProductItem.index'
 import { connect } from 'react-redux'
 
-// import new from 
 import newImg from '../../assets/img/new.png'
+import superSaleImg from '../../assets/img/hot.png'
+import saleImg from '../../assets/img/saleProduct.png'
 
 const ProductItemPresenter = ({
   data, 
@@ -21,6 +22,10 @@ const ProductItemPresenter = ({
   let optionImg
   if (data.option === 'new') {
     optionImg = newImg
+  } else if (data.option === 'sale') {
+    optionImg = saleImg
+  } else if (data.option === 'superSale') {
+    optionImg = superSaleImg
   }
 
   const onAddProduct = (id) => {
