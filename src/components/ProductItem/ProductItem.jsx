@@ -9,11 +9,29 @@ import { connect } from 'react-redux'
 // import new from 
 import newImg from '../../assets/img/new.png'
 
-const ProductItemPresenter = ({data, addProductCart, removeProductCart}) => {
+const ProductItemPresenter = ({
+  data, 
+  cartItemsIds,
+  addProductCount,
+  subProductCount,
+  addItemToCart,
+  removeItemFromCart
+}) => {
 
   let optionImg
   if (data.option === 'new') {
     optionImg = newImg
+  }
+
+  const onAddProduct = (id) => {
+    addProductCount(id)
+    !cartItemsIds.includes(id) && addItemToCart(id)
+  }
+
+  const onRemoveProduct = (id, count) => {
+    subProductCount(id)
+    // при удалении в этом экшене count = 1, значи, чо count будет 0
+    count === 1 && removeItemFromCart(id)
   }
 
   return (
@@ -26,8 +44,8 @@ const ProductItemPresenter = ({data, addProductCart, removeProductCart}) => {
       <div className='productItem-buy'>
         <span>{`${data.price}р.`}</span>
         {data.count === 0 ? 
-        <Button onClick={() => addProductCart(data.id)} type='button'>Купить</Button> : 
-        <ButtonCartBox plus={() => addProductCart(data.id)} minus={() => removeProductCart(data.id)} value={data.count}/>
+        <Button onClick={() => onAddProduct(data.id)} type='button'>Купить</Button> : 
+        <ButtonCartBox plus={() => onAddProduct(data.id, data.count)} minus={() => onRemoveProduct(data.id, data.count)} value={data.count}/>
         }
       </div>
     </div>

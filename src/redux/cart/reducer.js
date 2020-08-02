@@ -1,19 +1,26 @@
-import { CART_SET_CART_ITEMS } from './actionTypes'
+import { CART_ADD_ITEM_TO_CART, CART_REMOVE_ITEM_FROM_CART } from './actionTypes'
 
 const baseState = {
-  cartSum: 0,
-  cartItems: []
+  cartItemsIds: []
 }
 
 export const cartReducer = (state = baseState, action) => {
-  switch (action) {
-    case CART_SET_CART_ITEMS: {
+
+  switch (action.type) {
+    case CART_ADD_ITEM_TO_CART: {
       return {
         ...state,
-        cartSum: state.cartSum + action.payload.price,
-        items: [...state.cartItems, action.payload]
+        cartItemsIds: [...state.cartItemsIds, action.payload]
       }
     }
+
+    case CART_REMOVE_ITEM_FROM_CART: {
+      return {
+        ...state,
+        cartItemsIds: state.cartItemsIds.filter(id => id !== action.payload)
+      }
+    }
+
     default: 
       return state
   }

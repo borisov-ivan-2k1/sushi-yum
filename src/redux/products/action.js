@@ -1,11 +1,11 @@
-import { PRODUCTS_ADD_PRODUCT_TO_CART, PRODUCTS_REMOVE_PRODUCT_TO_CART } from './actionTypes'
+import { PRODUCTS_ADD_PRODUCT_COUNT, PRODUCTS_SUB_PRODUCT_COUNT } from './actionTypes'
 
 /**
  * add product to cart by id
  * @param {productId} payload 
  */
-export const addProductCart = (payload) => ({
-  type: PRODUCTS_ADD_PRODUCT_TO_CART,
+export const addProductCount = (payload) => ({
+  type: PRODUCTS_ADD_PRODUCT_COUNT,
   payload
 })
 
@@ -13,7 +13,7 @@ export const addProductCart = (payload) => ({
  * remove product from cart by id
  * @param {productId} payload 
  */
-export const removeProductCart = (payload) => ({
-  type: PRODUCTS_REMOVE_PRODUCT_TO_CART,
+export const subProductCount = (payload) => ({
+  type: PRODUCTS_SUB_PRODUCT_COUNT,
   payload
 })

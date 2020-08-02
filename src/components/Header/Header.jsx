@@ -3,8 +3,10 @@ import './Header.scss'
 import logo from '../../assets/img/logo.png'
 import cart from '../../assets/img/cart.png'
 import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { mapStateToProps } from './Header.index'
 
-export const Header  = () => {
+const HeaderPresenter = ({cartCount}) => {
 
   return (
     <div className='header'>
@@ -18,9 +20,15 @@ export const Header  = () => {
         <NavLink activeClassName='header-menu-active' to='/delivery' exact>Доставка</NavLink>
       </div>
 
-      <div className='header-cart'>
+      <NavLink className='header-cart' to='cart'>
         <img src={cart}/>
-      </div>
+          <div className='header-cart-count'>{cartCount}</div>
+      </NavLink>
     </div>
   )
 }
+
+export const Header = connect(
+  mapStateToProps,
+  undefined
+)(HeaderPresenter)

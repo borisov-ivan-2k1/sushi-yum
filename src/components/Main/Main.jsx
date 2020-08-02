@@ -20,10 +20,6 @@ const MainPresenter = ({
   superSaleProductsIds,
 }) => {
 
-  console.log(newProductsIds,
-    saleProductsIds,
-    superSaleProductsIds);
-
   return (
     <div className='main'>
 
@@ -82,9 +78,6 @@ const MainPresenter = ({
         </div>
 
       </div>
-
-
-
 
     </div>
   )

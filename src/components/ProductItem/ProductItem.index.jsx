@@ -1,11 +1,14 @@
-import { addProductCart, removeProductCart } from '../../redux/products/action'
+import { addProductCount, subProductCount } from '../../redux/products/action'
+import { addItemToCart, removeItemFromCart } from '../../redux/cart//action'
 import { bindActionCreators } from 'redux'
 
 export const mapStateToProps = (state) => ({
-
+  cartItemsIds: state.cart.cartItemsIds,
 })
 
 export const mapDispatchToProps = (dispatch) => bindActionCreators({
-  addProductCart,
-  removeProductCart
+  addProductCount,
+  subProductCount,
+  addItemToCart,
+  removeItemFromCart
 }, dispatch)

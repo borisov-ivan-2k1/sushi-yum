@@ -1,5 +1,5 @@
 import { PRODUCTS } from '../../products'
-import { PRODUCTS_ADD_PRODUCT_TO_CART, PRODUCTS_REMOVE_PRODUCT_TO_CART } from './actionTypes'
+import { PRODUCTS_ADD_PRODUCT_COUNT, PRODUCTS_SUB_PRODUCT_COUNT } from './actionTypes'
 
 let productsItems = {}
 
@@ -16,7 +16,7 @@ const baseState = {
 export const productsReducer = (state = baseState, action) => {
   switch (action.type) {
 
-    case PRODUCTS_ADD_PRODUCT_TO_CART: {
+    case PRODUCTS_ADD_PRODUCT_COUNT: {
       return {
         ...state,
         productsItems: {
@@ -29,7 +29,7 @@ export const productsReducer = (state = baseState, action) => {
       }
     }
 
-    case PRODUCTS_REMOVE_PRODUCT_TO_CART: {
+    case PRODUCTS_SUB_PRODUCT_COUNT: {
       return {
         ...state,
         productsItems: {
