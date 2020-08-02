@@ -16,6 +16,7 @@
   position: relative;
   &-content {
     margin-top: $headerHeight;
+    min-height: 100vh;
   }
 }
 

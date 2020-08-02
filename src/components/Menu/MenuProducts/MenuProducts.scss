@@ -1,0 +1,27 @@
+.empty {
+  text-align: center;
+  font-size: 35px;
+}
+
+.menuProducts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & > .productItem {
+    margin: 0 14px 27px 14px;
+
+  }
+}
+
+@media (max-width: 1100px) {
+  .menuProducts {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 700px) {
+  .menuProducts {
+    justify-content: center;
+  }
+}

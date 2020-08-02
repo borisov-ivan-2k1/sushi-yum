@@ -12,6 +12,7 @@ import saleImg from '../../assets/img/saleProduct.png'
 
 const ProductItemPresenter = ({
   data, 
+  
   cartItemsIds,
   addProductCount,
   subProductCount,
@@ -35,7 +36,7 @@ const ProductItemPresenter = ({
 
   const onRemoveProduct = (id, count) => {
     subProductCount(id)
-    // при удалении в этом экшене count = 1, значи, чо count будет 0
+    // при удалении в этом экшене count = 1, значит, что count будет 0
     count === 1 && removeItemFromCart(id)
   }
 

@@ -1,0 +1,51 @@
+@import '../../global.scss';
+
+.menu {
+  &-tabs {
+    display: flex;
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+    justify-content: space-between;
+    & > div {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 3px 9px;
+    }
+
+    &-active {
+      border-bottom: 1px solid #FF9455;
+    }
+  }
+
+  &-body {
+    margin-top: 64px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .menu {
+    div &-tabs {
+      margin-top: calc(110px + 24px);
+      & > div {
+        font-size: 22px;
+      }
+    }
+  }
+
+  div &-body {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    div &-tabs {
+      & > div {
+        font-size: 18px;
+      }
+    }
+  }
+}
