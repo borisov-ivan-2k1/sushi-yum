@@ -1,5 +1,5 @@
 export const PRODUCTS = [
-  {id: '00', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 0, type: 'roll', option: 'new'},
+  {id: '00', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 2, type: 'roll', option: 'new'},
   {id: '000', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 0, type: 'roll', option: 'new'},
   {id: '0000', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 0, type: 'roll', option: 'new'},
   {id: '00000', title: 'Филадельфия шеф', description: 'рис, нори, сыр сливочный, огурцы свежие, омлет, лосось слабосоленый', price: 439, image: 'https://static.pizzasushiwok.ru/images/menu_new/828-300.jpg', count: 0, type: 'roll', option: 'new'},

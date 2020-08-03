@@ -51,7 +51,7 @@ const ProductItemPresenter = ({
         <span>{`${data.price}р.`}</span>
         {data.count === 0 ? 
         <Button onClick={() => onAddProduct(data.id)} type='button'>Купить</Button> : 
-        <ButtonCartBox plus={() => onAddProduct(data.id, data.count)} minus={() => onRemoveProduct(data.id, data.count)} value={data.count}/>
+        <ButtonCartBox plus={() => onAddProduct(data.id)} minus={() => onRemoveProduct(data.id, data.count)} value={data.count}/>
         }
       </div>
     </div>

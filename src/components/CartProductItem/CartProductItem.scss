@@ -1,0 +1,46 @@
+.productCartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+
+  & > * {
+    font-size: 18px;
+  }
+
+  &-name {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-right: 12px;
+    img {
+      width: 99px;
+      margin-right: 12px;
+    }
+  }
+
+  &-count {
+    & > .buttonCartBox {
+      padding: 6px;
+      & > * {
+        font-size: 18px;
+      }
+
+      & > .buttonCartBox-minus, .buttonCartBox-plus {
+        width: 25px;
+        height: 25px;
+      }
+
+      & > .buttonCartBox-value {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  &-remove {
+    color: #ddd;
+    cursor: pointer;
+  }
+
+}

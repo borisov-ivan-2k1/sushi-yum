@@ -1,4 +1,4 @@
-import { PRODUCTS_ADD_PRODUCT_COUNT, PRODUCTS_SUB_PRODUCT_COUNT } from './actionTypes'
+import { PRODUCTS_ADD_PRODUCT_COUNT, PRODUCTS_SUB_PRODUCT_COUNT, PRODUCTS_REMOVE_PRODUCT_COUNT } from './actionTypes'
 
 /**
  * add product to cart by id
@@ -15,5 +15,14 @@ export const addProductCount = (payload) => ({
  */
 export const subProductCount = (payload) => ({
   type: PRODUCTS_SUB_PRODUCT_COUNT,
+  payload
+})
+
+/**
+ * zeroing product count
+ * @param {productId} payload 
+ */
+export const removeProductCount = (payload) => ({
+  type: PRODUCTS_REMOVE_PRODUCT_COUNT,
   payload
 })
