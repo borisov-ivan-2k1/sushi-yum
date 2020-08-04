@@ -1,7 +1,7 @@
 import { CART_ADD_ITEM_TO_CART, CART_REMOVE_ITEM_FROM_CART } from './actionTypes'
 
 const baseState = {
-  cartItemsIds: ['00']
+  cartItemsIds: []
 }
 
 export const cartReducer = (state = baseState, action) => {
