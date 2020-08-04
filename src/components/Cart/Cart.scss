@@ -70,9 +70,14 @@
         & > .productCartItem {
           flex-direction: column;
           justify-content: center;
-          & > img {
+          .productCartItem-name {
             margin-right: 0;
+            width: fit-content;
+            & > img {
+              margin-right: 0;
+            }
           }
+          
           & > * {
             margin-bottom: 6px;
           }

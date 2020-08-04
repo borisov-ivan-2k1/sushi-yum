@@ -13,7 +13,7 @@ const history = createBrowserHistory()
 
 ReactDOM.render(
  <Provider store={store}>
-    <BrowserRouter history={history}>
+    <BrowserRouter basename={process.env.PUBLIC_URL} history={history}>
       <App />
     </BrowserRouter>
  </Provider>,

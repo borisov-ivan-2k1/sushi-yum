@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/temp_sushi-yum/static/css/main.c09aed55.chunk.css",
-    "main.js": "/temp_sushi-yum/static/js/main.194e64d3.chunk.js",
-    "main.js.map": "/temp_sushi-yum/static/js/main.194e64d3.chunk.js.map",
-    "runtime-main.js": "/temp_sushi-yum/static/js/runtime-main.427e5ac6.js",
-    "runtime-main.js.map": "/temp_sushi-yum/static/js/runtime-main.427e5ac6.js.map",
-    "static/js/2.770114fc.chunk.js": "/temp_sushi-yum/static/js/2.770114fc.chunk.js",
-    "static/js/2.770114fc.chunk.js.map": "/temp_sushi-yum/static/js/2.770114fc.chunk.js.map",
-    "index.html": "/temp_sushi-yum/index.html",
-    "precache-manifest.889ee2a4edb2235d149f911a3217f71a.js": "/temp_sushi-yum/precache-manifest.889ee2a4edb2235d149f911a3217f71a.js",
-    "service-worker.js": "/temp_sushi-yum/service-worker.js",
-    "static/css/main.c09aed55.chunk.css.map": "/temp_sushi-yum/static/css/main.c09aed55.chunk.css.map",
-    "static/js/2.770114fc.chunk.js.LICENSE.txt": "/temp_sushi-yum/static/js/2.770114fc.chunk.js.LICENSE.txt",
-    "static/media/mainHeader.png": "/temp_sushi-yum/static/media/mainHeader.98883b9a.png"
+    "main.css": "/temp_sushiYum_ghp/static/css/main.ed87226f.chunk.css",
+    "main.js": "/temp_sushiYum_ghp/static/js/main.7a17b216.chunk.js",
+    "main.js.map": "/temp_sushiYum_ghp/static/js/main.7a17b216.chunk.js.map",
+    "runtime-main.js": "/temp_sushiYum_ghp/static/js/runtime-main.9bdb2163.js",
+    "runtime-main.js.map": "/temp_sushiYum_ghp/static/js/runtime-main.9bdb2163.js.map",
+    "static/js/2.770114fc.chunk.js": "/temp_sushiYum_ghp/static/js/2.770114fc.chunk.js",
+    "static/js/2.770114fc.chunk.js.map": "/temp_sushiYum_ghp/static/js/2.770114fc.chunk.js.map",
+    "index.html": "/temp_sushiYum_ghp/index.html",
+    "precache-manifest.51e7cb389a3dac08b2c047d2401a7c1f.js": "/temp_sushiYum_ghp/precache-manifest.51e7cb389a3dac08b2c047d2401a7c1f.js",
+    "service-worker.js": "/temp_sushiYum_ghp/service-worker.js",
+    "static/css/main.ed87226f.chunk.css.map": "/temp_sushiYum_ghp/static/css/main.ed87226f.chunk.css.map",
+    "static/js/2.770114fc.chunk.js.LICENSE.txt": "/temp_sushiYum_ghp/static/js/2.770114fc.chunk.js.LICENSE.txt",
+    "static/media/mainHeader.png": "/temp_sushiYum_ghp/static/media/mainHeader.98883b9a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.427e5ac6.js",
+    "static/js/runtime-main.9bdb2163.js",
     "static/js/2.770114fc.chunk.js",
-    "static/css/main.c09aed55.chunk.css",
-    "static/js/main.194e64d3.chunk.js"
+    "static/css/main.ed87226f.chunk.css",
+    "static/js/main.7a17b216.chunk.js"
   ]
 }
